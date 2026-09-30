@@ -5,6 +5,7 @@
 #ifndef TALLER1_1_TEMA_H
 #define TALLER1_1_TEMA_H
 #include <iostream>
+//Clase "TEMA" donde se guardan los datos para los atributos, constructor y GET and SET.
 using namespace std;
 class Tema {
     string id;

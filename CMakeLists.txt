@@ -13,4 +13,8 @@ add_executable(Taller1_1 main.cpp
         models/Tema.cpp
         include/models/Tema.h
         struct/ListaEnlazadaSimple.cpp
-        include/struct/ListaEnlazadaSimple.h)
+        include/struct/ListaEnlazadaSimple.h
+        service/LecturaUsuario.cpp
+        include/service/LecturaUsuario.h
+        service/LecturaTema.cpp
+        include/service/LecturaTema.h)
