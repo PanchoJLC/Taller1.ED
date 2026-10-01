@@ -9,25 +9,18 @@ using namespace std;
 //Clase "USUARIO" la cual contiene los atributos "ID" y "NOMBRE", atributos que identifican,
 //Al usuario y ademas sus funciones "GET" y "SET"
 class Usuario {
-    string id;
-    string nombre;
+    std::string id;
+    std::string nombre;
+
     public:
     Usuario();
     Usuario(string id, string nombre);
-    ~Usuario();
 
-    string getId() {
-        return this->id;
-    }
-    string getNombre() {
-        return this->nombre;
-    }
-    void setId(string id) {
-        this->id = id;
-    }
-    void setNombre(string nombre) {
-        this->nombre = nombre;
-    }
+    string getId();
+
+    string getNombre();
+    void setId(string id);
+    void setNombre(string nombre);
 
 
 };

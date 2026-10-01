@@ -4,13 +4,15 @@
 
 #include "../include/service/LecturaTema.h"
 #include "../include/models/Tema.h"
-#include <iostream>
+
 #include <fstream>
 #include <sstream>
 
 using namespace std;
 
-void lecturaTema() {
+LecturaTema::LecturaTema() = default;
+
+void LecturaTema::leerTema() {
     std::fstream file("temas.csv");
 
     if (file.is_open()) {
@@ -27,6 +29,18 @@ void lecturaTema() {
         std::getline(ss,titulo,';');
         std::getline(ss,idUsuario,';');
         std::getline(ss,respuestas,';');
+
+        Tema tema = Tema(id,titulo,idUsuario,respuestas);
+
+        temas.agregar(tema);
     }
     file.close();
 }
+void LecturaTema::mostrarTema() {
+    for (int i = 0; i < temas.getTamanio(); i++) {
+        std::cout << "Tema " << i+1 << ":" << std::endl;
+        temas.obtener(i).mostrarInformacion();
+        std::cout << std::endl;
+    }
+}
+

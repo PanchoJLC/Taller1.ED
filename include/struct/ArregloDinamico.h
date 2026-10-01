@@ -6,8 +6,4 @@
 #define TALLER1_1_ARREGLODINAMICO_H
 
 
-class ArregloDinamico {
-};
-
-
 #endif //TALLER1_1_ARREGLODINAMICO_H

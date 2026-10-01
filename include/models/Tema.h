@@ -8,40 +8,25 @@
 //Clase "TEMA" donde se guardan los datos para los atributos, constructor y GET and SET.
 using namespace std;
 class Tema {
-    string id;
-    string titulo;
-    string idUsuario;
-    string respuestas;
+    std::string id;
+    std::string titulo;
+    std::string idUsuario;
+    std::string respuestas;
     public:
     Tema();
     Tema(string id,string titulo, string idUsuario, string respuestas);
-    ~Tema();
 
-    string getId() {
-        return this->id;
-    }
-    string getTitulo() {
-        return this->titulo;
-    }
-    string getIdUsuario() {
-        return this->idUsuario;
-    }
-    string getRespuestas() {
-        return this->respuestas;
-    }
+    string getId();
+    string getTitulo();
+    string getIdUsuario();
+    string getRespuestas();
 
-    void setId(string id) {
-        this->id = id;
-    }
-    void setTitulo(string titulo) {
-        this->titulo = titulo;
-    }
-    void setIdUsuario(string idUsuario) {
-        this->idUsuario = idUsuario;
-    }
-    void setRespuestas(string respuestas) {
-        this->respuestas = respuestas;
-    }
+    void setId(std::string id);
+    void setTitulo(std::string titulo);
+    void setIdUsuario(std::string idUsuario);
+    void setRespuestas(std::string respuestas);
+
+    void mostrarInformacion();
 };
 
 

@@ -4,12 +4,15 @@
 
 #ifndef TALLER1_1_LECTURATEMA_H
 #define TALLER1_1_LECTURATEMA_H
+#include "../struct/ArregloDinamico.h"
 
 class LecturaTema {
-    void lecturaTema() {
-    }
-    void mostrarTema() {
-    }
+    ArregloDinamico temas;
+
+public:
+    LecturaTema();
+    void leerTema();
+    void mostrarTema();
 };
 
 
