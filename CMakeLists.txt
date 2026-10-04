@@ -4,17 +4,19 @@ project(Taller1_1)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Taller1_1 main.cpp
-        struct/ArregloDinamico.cpp
-        include/struct/ArregloDinamico.h
-        models/Usuario.cpp
         include/models/Usuario.h
-        service/Sistema.cpp
-        include/service/Sistema.h
-        models/Tema.cpp
+        models/Usuario.cpp
         include/models/Tema.h
-        struct/ListaEnlazadaSimple.cpp
-        include/struct/ListaEnlazadaSimple.h
-        service/LecturaUsuario.cpp
-        include/service/LecturaUsuario.h
-        service/LecturaTema.cpp
-        include/service/LecturaTema.h)
+        models/Tema.cpp
+        include/models/Respuesta.h
+        models/Respuesta.cpp
+        include/struct/Utilidades.h
+        struct/Utilidades.cpp
+        include/service/GestorArchivos.h
+        service/GestorArchivos.cpp
+        include/service/ArregloUsuarios.h
+        service/ArregloUsuarios.cpp
+        include/service/ArregloTemas.h
+        service/ArregloTemas.cpp
+        include/service/Foro.h
+        service/Foro.cpp)

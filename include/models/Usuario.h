@@ -1,29 +1,22 @@
-//
-// Created by fraco on 13-09-2026.
-//
 
-#ifndef TALLER1_1_USUARIO_H
-#define TALLER1_1_USUARIO_H
-#include <iostream>
-using namespace std;
-//Clase "USUARIO" la cual contiene los atributos "ID" y "NOMBRE", atributos que identifican,
-//Al usuario y ademas sus funciones "GET" y "SET"
+#ifndef USUARIO_H
+#define USUARIO_H
+
+#include <string>
+
 class Usuario {
-    std::string id;
+    int id;
     std::string nombre;
 
-    public:
-    Usuario();
-    Usuario(string id, string nombre);
+public:
 
-    string getId();
+    Usuario(int idUsuario, const std::string& nombreUsuario);
 
-    string getNombre();
-    void setId(string id);
-    void setNombre(string nombre);
+    int getId() const;
 
+    std::string getNombre() const;
 
+    void setNombre(const std::string& nuevoNombre);
 };
 
-
-#endif //TALLER1_1_USUARIO_H
+#endif
