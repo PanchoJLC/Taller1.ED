@@ -16,7 +16,7 @@ namespace Utilidades {
     bool esIdTemaValido(const std::string& id);
     // Muestra un mensaje y lee una linea completa desde el teclado.
     std::string leerLinea(const std::string& mensaje);
-    //Imprime el encabezado del foro.
+    // Imprime el encabezado del foro.
     void imprimirEncabezado();
 }
 
