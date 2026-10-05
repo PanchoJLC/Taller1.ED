@@ -20,3 +20,6 @@ add_executable(Taller1_1 main.cpp
         service/ArregloTemas.cpp
         include/service/Foro.h
         service/Foro.cpp)
+
+configure_file(${CMAKE_SOURCE_DIR}/usuarios.csv ${CMAKE_BINARY_DIR}/usuarios.csv COPYONLY)
+configure_file(${CMAKE_SOURCE_DIR}/temas.csv ${CMAKE_BINARY_DIR}/temas.csv COPYONLY)

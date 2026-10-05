@@ -8,7 +8,7 @@
 ArregloUsuarios::ArregloUsuarios() {
     cantidad = 0;
     expansiones = 0;
-    capacidad = 2;
+    capacidad = 4;
     usuarios = (Usuario**) malloc(capacidad * sizeof(Usuario*));
     if (usuarios == nullptr) {
         capacidad = 0;

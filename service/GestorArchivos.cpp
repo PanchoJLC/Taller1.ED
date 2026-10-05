@@ -140,7 +140,7 @@ bool GestorArchivos::cargarTemas(const std::string& ruta, const ArregloUsuarios&
         std::string textoIdUsuario = Utilidades::quitarEspacios(partes[3]);
 
         if (!Utilidades::esIdTemaValido(id)) {
-            error = lugar + "el Id del tema '" + id + "' debe tener dos letras mayusculas y tres digitos.";
+            error = lugar + "el Id del tema" + id + " debe tener dos letras mayusculas y tres digitos.";
             return false;
         }
         if (temas.buscarIndicePorId(id) != -1) {

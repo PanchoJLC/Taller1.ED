@@ -7,5 +7,4 @@ int main() {
     }
     foro.ejecutar();
     return 0;
-return 0;
 }
