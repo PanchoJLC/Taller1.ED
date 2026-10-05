@@ -20,24 +20,6 @@ namespace Utilidades {
         return texto.substr(inicio, fin - inicio);
     }
 
-    std::string quitarMarcaBOM(const std::string& texto) {
-        if (texto.size() >= 3 && (unsigned char)texto[0] == 0xEF &&
-            (unsigned char)texto[1] == 0xBB && (unsigned char)texto[2] == 0xBF) {
-            return texto.substr(3);
-        }
-        return texto;
-    }
-
-    std::string aMayusculas(const std::string& texto) {
-        std::string resultado = texto;
-        for (size_t i = 0; i < resultado.size(); i++) {
-            if (resultado[i] >= 'a' && resultado[i] <= 'z') {
-                resultado[i] = resultado[i] - 'a' + 'A';
-            }
-        }
-        return resultado;
-    }
-
     int dividir(const std::string& texto, char separador, std::string partes[], int maximo) {
         int cantidad = 0;
         std::string actual = "";

@@ -31,7 +31,7 @@ void Foro::ejecutar() {
     bool continuar = true;
     while (continuar) {
         mostrarMenuPrincipal();
-        std::string entrada = Utilidades::aMayusculas(Utilidades::leerLinea("Seleccione una opcion: "));
+        std::string entrada = (Utilidades::leerLinea("Seleccione una opcion: "));
 
         if (entrada == "A") {
             revisarTema();
@@ -91,8 +91,8 @@ void Foro::revisarTema() {
     Tema* tema = nullptr;
 
     while (tema == nullptr) {
-        std::string id = Utilidades::aMayusculas(
-                Utilidades::leerLinea("Ingrese el Id del tema que desea revisar (0 para volver al menu): "));
+        std::string id =
+                Utilidades::leerLinea("Ingrese el Id del tema que desea revisar (0 para volver al menu): ");
         if (id == "0") {
             return;
         }
@@ -110,7 +110,7 @@ void Foro::revisarTema() {
     while (!volver) {
         std::cout << "A) Comentar" << std::endl;
         std::cout << "B) Atras" << std::endl;
-        std::string opcion = Utilidades::aMayusculas(Utilidades::leerLinea("Seleccione una opcion: "));
+        std::string opcion = Utilidades::leerLinea("Seleccione una opcion: ");
         if (opcion == "A") {
             comentar(tema);
             mostrarTema(tema);
@@ -202,8 +202,8 @@ void Foro::eliminarUsuario() {
 
     bool respondido = false;
     while (!respondido) {
-        std::string confirmacion = Utilidades::aMayusculas(
-                Utilidades::leerLinea("Se eliminaran todos sus registros. Desea continuar? (SI/NO): "));
+        std::string confirmacion =
+                Utilidades::leerLinea("Se eliminaran todos sus registros. Desea continuar? (SI/NO): ");
         if (confirmacion == "NO") {
             std::cout << "Eliminacion cancelada." << std::endl;
             return;

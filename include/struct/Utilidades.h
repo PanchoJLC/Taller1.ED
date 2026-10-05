@@ -8,10 +8,6 @@ namespace Utilidades {
 
     // Elimina espacios, tabulaciones y saltos de linea al inicio y al final.
     std::string quitarEspacios(const std::string& texto);
-     // Elimina la marca BOM (EF BB BF) si el texto comienza con ella.
-    std::string quitarMarcaBOM(const std::string& texto);
-     // Convierte todas las letras del texto a mayusculas.
-    std::string aMayusculas(const std::string& texto);
      // Divide un texto segun un separador y guarda las partes en un arreglo.
     int dividir(const std::string& texto, char separador, std::string partes[], int maximo);
     // Convierte un texto formado solo por digitos en un numero entero.

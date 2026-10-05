@@ -66,9 +66,6 @@ bool GestorArchivos::cargarUsuarios(const std::string& ruta, ArregloUsuarios& us
     int numeroLinea = 0;
     while (std::getline(archivo, linea)) {
         numeroLinea++;
-        if (numeroLinea == 1) {
-            linea = Utilidades::quitarMarcaBOM(linea);
-        }
         linea = Utilidades::quitarEspacios(linea);
         if (linea.empty()) {
             continue;
@@ -118,9 +115,7 @@ bool GestorArchivos::cargarTemas(const std::string& ruta, const ArregloUsuarios&
     int numeroLinea = 0;
     while (std::getline(archivo, linea)) {
         numeroLinea++;
-        if (numeroLinea == 1) {
-            linea = Utilidades::quitarMarcaBOM(linea);
-        }
+
         linea = Utilidades::quitarEspacios(linea);
         if (linea.empty()) {
             continue;
